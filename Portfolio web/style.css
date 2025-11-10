@@ -1,0 +1,32 @@
+/* Skill Card Hover Effects */
+.skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-card:hover {
+    transform: rotate(-15deg);
+    box-shadow: 7px 32px 7px rgba(167, 139, 250, 0.4); /* light violet */
+}
+
+/* Navigation Active Link Styles */
+nav a {
+    position: relative;
+    display: inline-block;
+}
+
+nav a.active,
+nav a:active {
+    color: #7C3AED; /* violet-600 */
+}
+
+nav a.active::after,
+nav a:focus::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #7C3AED; /* violet-600 */
+}
